@@ -42,16 +42,16 @@ const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
 const submitButton = document.getElementById('submit');
 
-// let currentQuiz = 3
-// let score = 0
+let currentQuiz = 3
+let score = 0
 
-// startQuiz()
-// function startQuiz() {
-// const currentQuestion = quizData[currentQuiz]
+startQuiz()
+function startQuiz() {
+const currentQuestion = quizData[currentQuiz]
 
-// questionEl.innerText = currentQuestion.question
-// a_text.innerText = currentQuestion.a
-// b_text.innerText = currentQuestion.b
-// c_text.innerText = currentQuestion.c
-// d_text.innerText = currentQuestion.d
+questionEl.innerText = currentQuestion.question
+a_text.innerText = currentQuestion.a
+b_text.innerText = currentQuestion.b
+c_text.innerText = currentQuestion.c
+d_text.innerText = currentQuestion.d
 }
