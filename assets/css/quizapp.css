@@ -30,7 +30,8 @@ body {
 }
 h1 {
     padding: 1rem;
-    text-align: center;
+    font-size: x-large;
+   
 }
 ul {
     list-style: none;
