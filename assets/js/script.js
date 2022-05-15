@@ -40,31 +40,62 @@ const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
-const submitButton = document.getElementById('submit');
+const submitBtn = document.getElementById('submit');
 
 let currentQuiz = 0
 let score = 0
 
 startQuiz()
-deselectAnswers()
 
 function startQuiz() {
-const currentQuestion = quizData[currentQuiz]
 
-questionEl.innerText = currentQuestion.question
-a_text.innerText = currentQuestion.a
-b_text.innerText = currentQuestion.b
-c_text.innerText = currentQuestion.c
-d_text.innerText = currentQuestion.d
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
 }
 function deselectAnswers() {
-    answerEls.forEach(answerEls => answerEls.checked = false)
+    answerEls.forEach(answerEl => answerEl.checked = false)
 }
     
-getSelected() {
+function getSelected() {
+    let answer
+
+    answerEls.forEach(answerEl => { 
+
+        if (answerEl.checked) {
+            answer = answerEl.id
+        } 
+    }) 
+
+    return answer
 
 }
 
-// submitButton.addEventListener('click' () => {
-//     const answer = getSelected()
-// }) 
+submitBtn.addEventListener('click', () => {
+    let answer = getSelected()
+    if (answer) {
+        if(answer === quizData[currentQuiz].correct) {
+           score++ 
+        }
+        currentQuiz++
+
+        if(currentQuiz < quizData.length) {
+            startQuiz()
+        } else 
+        {
+
+            quiz.innerHTML = `
+            <h1>You answered ${score}/${quizData.length} questions corectly</h1>
+            <button onclick="location.reload()">Reload</button>`
+            // alert (`score :` + score)
+            // location.reload();
+        }
+
+    }
+}) 
