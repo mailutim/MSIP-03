@@ -42,10 +42,12 @@ const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
 const submitButton = document.getElementById('submit');
 
-let currentQuiz = 3
+let currentQuiz = 0
 let score = 0
 
 startQuiz()
+deselectAnswers()
+
 function startQuiz() {
 const currentQuestion = quizData[currentQuiz]
 
@@ -55,3 +57,14 @@ b_text.innerText = currentQuestion.b
 c_text.innerText = currentQuestion.c
 d_text.innerText = currentQuestion.d
 }
+function deselectAnswers() {
+    answerEls.forEach(answerEls => answerEls.checked = false)
+}
+    
+getSelected() {
+    
+}
+
+submitButton.addEventListener('click' () => {
+    const answer = getSelected()
+}) 
