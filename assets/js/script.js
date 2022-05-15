@@ -44,7 +44,6 @@ const submitBtn = document.getElementById('submit');
 
 let currentQuiz = 0
 let score = 0
-
 startQuiz()
 
 function startQuiz() {
@@ -87,13 +86,15 @@ submitBtn.addEventListener('click', () => {
 
         if(currentQuiz < quizData.length) {
             startQuiz()
-        } else 
-        {
+        } else {
+
+            document.write("Your score is " + score + " out of 4")
             // alert (`score :` + score)
             // location.reload();
-            container.innerHTML = `<h1>Your score is((${score}/${quizdata.length})* 100 )</h1>
-            <button onclick="location.reload()">Reload</button>
-            `
+            // container.innerHTML = `<h1>Your score is((${score}/${quizdata.length})* 100 )</h1>
+
+            // <button onclick="location.reload()">Reload</button>
+            // `
         }
 
     }
