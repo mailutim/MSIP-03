@@ -62,9 +62,9 @@ function deselectAnswers() {
 }
     
 getSelected() {
-    
+
 }
 
-submitButton.addEventListener('click' () => {
-    const answer = getSelected()
-}) 
+// submitButton.addEventListener('click' () => {
+//     const answer = getSelected()
+// }) 
