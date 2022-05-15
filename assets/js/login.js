@@ -1,15 +1,15 @@
 function store(){
-    var emailad = document.getElementById("email");
-    var pin = document.getElementById("psw");
+    var inputUserName = document.getElementById("email");
+    var inputPassword = document.getElementById("psw");
 
-    if (emailad.value.length == 0) {
+    if (inputUserName.value.length == 0) {
         alert('Please fill in your email address')
-    }else if(pin.value.length == 0){
+    }else if(inputPassword.value.length == 0){
         alert('Please fill in password');
 
     }else{
-            localStorage.setItem('email', emailad.value);
-            localStorage.setItem('passwad', pin.value);
+            localStorage.setItem('email', inputUserName.value);
+            localStorage.setItem('psw', inputPassword.value);
             alert('Your account has been created');
         }
 }
