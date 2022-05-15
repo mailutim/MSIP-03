@@ -22,7 +22,7 @@ a {
 .container {
     background-color: white;    
     border-radius: 10px;
-    overflow: hidden;
+    overflow:hidden;
     width: 600px;
     color: #b91372;
     
@@ -30,9 +30,9 @@ a {
 .form {
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    width: 600px;
-    height: 750px;
+    overflow: scroll;
+    width: 400px;
+    height: 450px;
     padding: 16px;
 }
 input[type=text], input[type=password], input[type=email]{
