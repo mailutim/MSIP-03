@@ -13,17 +13,18 @@
  - [Authors Info](#Authors-Info)
  ## Description
  <p>This is a simple quiz app using HTML CSS and Javascript</p>
- 
+
 [Go Back to the top](#Quizzle)
 
 ## Features
 As a user of the application,you will be able to :
 1. Register through a form
 2. Login
+
 [Go Back to the top](#Quizzle)
 
  ###  Requirements
- * Access to  a computer or any other garget
+ * Access to  a computer or any other gadget
  * Access to internet
  ### Installation Process
  ****
