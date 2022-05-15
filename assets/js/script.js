@@ -33,7 +33,7 @@ const quizData = [
     },
 ];
 
-const quiz = document.getElementById('quizdiv');
+const quiz = document.getElementById('container');
 const answerEls = document.querySelectorAll('.answer');
 const questionEl = document.getElementById('quizquestion');
 const a_text = document.getElementById('a_text');
@@ -88,10 +88,12 @@ submitBtn.addEventListener('click', () => {
             startQuiz()
         } else {
 
+           
+
             document.write("Your score is " + score + " out of 4")
             // alert (`score :` + score)
             // location.reload();
-            // container.innerHTML = `<h1>Your score is((${score}/${quizdata.length})* 100 )</h1>
+            // output.innerHTML = `<h1>Your score is((${score}/${quizdata.length})* 100 )</h1>
 
             // <button onclick="location.reload()">Reload</button>
             // `
