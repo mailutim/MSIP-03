@@ -1,8 +1,15 @@
 function store(){
-    let name = document.getElementById("email");
-    var passwad = document.getElementById("psw");
+    var emailad = document.getElementById("email");
+    var pin = document.getElementById("psw");
 
-    if (name.value.length == 0) {
+    if (emailad.value.length == 0) {
         alert('Please fill in your email address')
-    }
+    }else if(pin.value.length == 0){
+        alert('Please fill in password');
+
+    }else{
+            localStorage.setItem('email', emailad.value);
+            localStorage.setItem('passwad', pin.value);
+            alert('Your account has been created');
+        }
 }

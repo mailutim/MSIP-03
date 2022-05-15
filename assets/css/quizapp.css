@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     width: 600px;
-    height: 600px;
+    height: 750px;
     padding: 16px;
 }
 input[type=text], input[type=password], input[type=email]{
