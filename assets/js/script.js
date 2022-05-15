@@ -91,12 +91,7 @@ submitBtn.addEventListener('click', () => {
            
 
             document.write("Your score is " + score + " out of 4")
-            // alert (`score :` + score)
-            // location.reload();
-            // output.innerHTML = `<h1>Your score is((${score}/${quizdata.length})* 100 )</h1>
-
-            // <button onclick="location.reload()">Reload</button>
-            // `
+    
         }
 
     }
