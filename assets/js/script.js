@@ -88,9 +88,12 @@ submitBtn.addEventListener('click', () => {
             startQuiz()
         } else {
 
-           
+           container.innerHTML = `
+           <h2>Your score is <br>
+           ${score}/${quizData.length}</h2>
+           <button onclick ="location.reload()">Reload</button>`
 
-            document.write("Your score is " + score + " out of 4")
+            // document.write("Your score is " + score + " out of 4")
     
         }
 
